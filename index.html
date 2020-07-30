@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Shop</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h2>Welcome to My Fruit Shop</h2>
+      <input type="number" id="Balance" placeholder="Enter Balance" />
+      <button onclick="myBalance()" class="submit">Submit</button>
+    </header>
+    <div class="fruits">
+      <div class="item">
+        <h3 style="color: #dd0611">Apple</h3>
+        <img src="./images/6000200094514.jpg" alt="This is  a Apple" class="fruit" />
+        <h4 style="font-size: 20px;">Price: Rs. 10</h4>
+        <div>
+          <button onclick="remove('apple')" class="btn">-</button>
+
+          <span id="appleQuantity" class="quantity">0</span>
+
+          <button onclick="add('apple')" class="btn">+</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <h3 style="color: #f7bd00">Orange</h3>
+        <img src="./images/Orange_Juice_Perth_CBD_2048x.webp" alt="This is an orange" class="fruit" />
+        <h4 style="font-size: 20px;" >Price: Rs. 15</h4>
+        <div>
+          <button onclick="remove('orange')" class="btn">-</button>
+
+          <span id="orangeQuantity" class="quantity">0</span>
+
+          <button onclick="add('orange')" class="btn">+</button>
+        </div>
+      </div>
+      <div class="item">
+        <h3 style="color: #dd0611">Strawberry</h3>
+        <img src="./images/single_strawberry__isolated_on_a_white_background.webp" alt="This is Strawberry" class="fruit" />
+        <h4 style="font-size: 20px;">Price: Rs. 20</h4>
+        <div>
+          <button onclick="remove('strawberry')" class="btn">-</button>
+
+          <span id="strawberryQuantity" class="quantity">0</span>
+
+          <button onclick="add('strawberry')" class="btn">+</button>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h3>
+        Your Total Bill is Rs.
+        <span id="total">0</span>
+      </h3>
+      <h3>
+       Your Remaining Balance is Rs.
+        <span id="remainingBalance">0</span>
+      </h3>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

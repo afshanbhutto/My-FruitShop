@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    margin: 0;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  #Balance {
+    padding: 7px 15px;
+    margin: 0.5rem;
+    border: 2px solid #fd6208;
+    border-radius: 4px;
+    width: 100px;
+  }
+  .submit {
+    padding: 7px 15px;
+    margin: 0.5rem;
+    background-color: #fd6208;
+    width: 100px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Dancing Script', cursive;
+  }
+  .fruits{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .item {
+    padding: 1rem 4rem 2rem 4rem;
+    margin: 2rem 4rem;
+    border: 2px solid #fd6208;
+    border-radius: 30px;
+  }
+  .fruit {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%
+  }
+  .btn {
+    margin: 1rem;
+    padding: 0.25rem 0.75rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #fd6208;
+    color: white;
+    border: 1px solid white;
+    border-radius: 2px;
+  }
+  .quantity {
+    font-size: 1.2rem;
+  }
+  @media only screen and (max-width: 700px) {
+    .fruits {
+      display: block;
+    }
+  }
